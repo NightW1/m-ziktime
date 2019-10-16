@@ -1,0 +1,152 @@
+---
+  0 debug pnpm:scope: 
+    selected: 1
+    workspacePrefix: null
+  1 info pnpm: 
+    message: "A store server is running. All store manipulations are delegated to it."
+    prefix: "/app"
+  2 debug pnpm:package-json: 
+    initial: 
+      //1: "describes your app and its dependencies"
+      //2: "https://docs.npmjs.com/files/package.json"
+      //3: "updating this file will download and update your packages"
+      name: "hello-express"
+      version: "0.0.1"
+      description: "A simple Node app built on Express, instantly up and running."
+      main: "app.js"
+      scripts: 
+        start: "node app.js"
+      dependencies: 
+        chalk: "^2.4.2"
+        discord.js: "^11.5.1"
+        epress: "^4.13.2"
+        express: "^4.17.1"
+        fs: "^0.0.2"
+        jimp: "^0.6.8"
+        moment: "^2.24.0"
+        opusscript: "^0.0.6"
+        quick.db: "^7.0.0-b22"
+        request: "^2.88.0"
+        simple-youtube-api: "^5.2.1"
+        snekfetch: "^4.0.4"
+        weather: "^1.0.4"
+        weather-js: "^2.0.0"
+        ytdl-core: "^0.29.7"
+      engines: 
+        node: "9.4.0"
+      repository: 
+        url: "git+https://github.com/aXNNy/axaltyapi.git"
+      license: "MIT"
+      keywords: 
+        - "node"
+        - "glitch"
+        - "express"
+      readme: "# batuhanm-zik"
+      readmeFilename: "README.md"
+      gitHead: "da7689a845fc6d4f865e5e4a85688c1989da29d9"
+      bugs: 
+        url: "https://github.com/aXNNy/axaltyapi/issues"
+      homepage: "https://github.com/aXNNy/axaltyapi#readme"
+      _id: "hello-express@0.0.1"
+    prefix: "/app"
+  3 debug pnpm:stage: 
+    prefix: "/app"
+    stage: "resolution_started"
+  4 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/chalk/2.4.2"
+    requester: "/app"
+    status: "resolved"
+  5 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/simple-youtube-api/5.2.1"
+    requester: "/app"
+    status: "resolved"
+  6 debug pnpm:deprecation: 
+    deprecated: "use node-fetch instead"
+    depth: 0
+    pkgId: "registry.npmjs.org/snekfetch/4.0.4"
+    pkgName: "snekfetch"
+    pkgVersion: "4.0.4"
+    prefix: "/app"
+  7 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/snekfetch/4.0.4"
+    requester: "/app"
+    status: "resolved"
+  8 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/express/4.17.1"
+    requester: "/app"
+    status: "resolved"
+  9 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/jimp/0.6.8"
+    requester: "/app"
+    status: "resolved"
+  10 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/moment/2.24.0"
+    requester: "/app"
+    status: "resolved"
+  11 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/fs/0.0.2"
+    requester: "/app"
+    status: "resolved"
+  12 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/discord.js/11.5.1"
+    requester: "/app"
+    status: "resolved"
+  13 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/opusscript/0.0.6"
+    requester: "/app"
+    status: "resolved"
+  14 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/weather-js/2.0.0"
+    requester: "/app"
+    status: "resolved"
+  15 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/ytdl-core/0.29.7"
+    requester: "/app"
+    status: "resolved"
+  16 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/weather/1.0.4"
+    requester: "/app"
+    status: "resolved"
+  17 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/request/2.88.0"
+    requester: "/app"
+    status: "resolved"
+  18 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/quick.db/7.0.0-b22"
+    requester: "/app"
+    status: "resolved"
+  19 error pnpm: 
+    message: "No matching version found for epress@>=4.13.2 <5.0.0"
+    code: "ERR_PNPM_NO_MATCHING_VERSION"
+    packageMeta: 
+      versions: 
+        0.0.1-security: 
+          name: "epress"
+          version: "0.0.1-security"
+          _hasShrinkwrap: false
+          directories: {}
+          dist: 
+            integrity: "sha512-/REk6cExLsDmL7S4dXf6SHaZl4e+9ZzoGAH6KEETT9lzZyBr4PnFLvHFc0WGb+vXzIOqySHSigzP+iSD+IDUYw=="
+            shasum: "8a44c252fa19b1d4c9704a00792639b0ae1e97bd"
+            tarball: "https://registry.npmjs.org/epress/-/epress-0.0.1-security.tgz"
+      name: "epress"
+      dist-tags: 
+        latest: "0.0.1-security"
+      modified: "2017-09-25T23:18:31.926Z"
+      cachedAt: 1571210946842
+  20 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/chalk/2.4.2"
+    requester: "/app"
+    status: "found_in_store"
+  21 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/ansi-styles/3.2.1"
+    requester: "/app"
+    status: "resolved"
+  22 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/escape-string-regexp/1.0.5"
+    requester: "/app"
+    status: "resolved"
+  23 debug pnpm:progress: 
+    packageId: "registry.npmjs.org/supports-color/5.5.0"
+    requester: "/app"
+    status: "resolved"

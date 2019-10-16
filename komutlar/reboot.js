@@ -1,24 +1,36 @@
 const Discord = require('discord.js');
+const moment = require('moment');
 
-
-exports.run = function(client, message) {
-
-    message.channel.send("Bot yeniden başlatılıyor").then(msg => {
-        console.log("[BOT]Yeniden başlatılıyor | [REiS BOT] Altypaı");
-        process.exit(0);
+exports.run = (client, message, args) => {
+message.channel.sendMessage(' **Botun Yeniden Başlatılmasını Onaylıyor Musun ?**')
+.then(() => {
+  message.channel.awaitMessages(response => response.content === "evet", {
+    max: 1,
+    time: 30000,
+    errors: ['time'],
+  })
+  .then((collected) => {
+      message.channel.sendMessage('  **Yeniden Başlıyorum Sahip**   ').then(message => {
+      console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] :space_invader: **Bot Yeniden Başlatılıyor** :space_invader:`)
+      process.exit(1);
+    }).catch(console.error)
+    })
+    .catch(() => {
+      message.channel.sendMessage(' `Yeniden Başlama İşlemini İptal Ettim` ');
     });
-
+});
 };
 
 exports.conf = {
-  enabled: true, 
-  guildOnly: false, 
-  aliases: [],
-  permLevel: 3
+  enabled: true,
+  guildOnly: false,
+  aliases: ['yenile','yb'],
+  permLevel: 4
 };
 
 exports.help = {
-  name: 'reboot', 
-  description: 'Botu yeniden başlatır',
+  name: 'reboot',
+  description: '[YAPIMCI]',
   usage: 'reboot'
 };
+//elleme burayı
